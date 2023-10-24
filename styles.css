@@ -1,10 +1,12 @@
 /* Style the dropdown button */
 .dropbtn {
-    background-color: #3498db;
+    background-color: #000000;
     color: white;
     padding: 12px;
     border: none;
     cursor: pointer;
+    visibility: visible;
+    display: flex;
 }
 
 /* Position the dropdown container at the top right */
@@ -41,3 +43,17 @@
 .dropdown-content a:hover {
     background-color: #ddd;
 }
+
+/* Header */
+.header {
+    background-image: url('images/background.webp'); /* Replace 'your-image.jpg' with the path to your image */
+    background-position: top center; /* Position the image at the top center of the page */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place the background behind other elements */
+    }
