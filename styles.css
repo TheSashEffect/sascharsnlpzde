@@ -5,26 +5,45 @@
     padding: 12px;
     border: none;
     cursor: pointer;
-    visibility: visible;
-    display: flex;
+    position: absolute;
+    top: 0px; /* Adjust this value for vertical position */
+    right: 0px; /* Adjust this value for horizontal position */
+    z-index: 3; /* Place the button above other elements */
 }
 
 /* Position the dropdown container at the top right */
 .dropdown {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
 }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
+    position: relative;
+    color: black;
+    /*padding: 8px 16px; /* Reduce padding */
+    right: 0px;
+    top: 50px;
+    text-decoration: none;
     display: none;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    background-color: rgb(255, 255, 255);
+}
+
+/*display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
 
 /* Show the dropdown content when hovering over the button */
 .dropdown:hover .dropdown-content {
@@ -43,6 +62,7 @@
 .dropdown-content a:hover {
     background-color: #ddd;
 }
+
 
 /* Header */
 .header {
